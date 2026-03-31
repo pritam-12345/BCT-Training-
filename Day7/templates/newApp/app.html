@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{%block title%}newApp{%endblock%}
+{% block content %}
+    <h1>This is the page for the newApp</h1>
+    <p>This is the jibresh. So dont look into it...</p>
+    
+    {% for product in products %}
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <p>{{ product.price }}</p>
+    {% endfor %}
+    
+{% endblock content %}
